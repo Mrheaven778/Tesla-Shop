@@ -1,6 +1,8 @@
 import NotFound from '@/app/not-found'
 import QuantitySelector from '@/components/product/quantity-selector/QuantitySelector'
 import SizeSelector from '@/components/product/size-selector/SizeSelector'
+import ProductMobielSlideshow from '@/components/product/slideshow/ProductMobielSlideshop'
+import ProductSlideshow from '@/components/product/slideshow/ProductSlideshow'
 import { titleFont } from '@/config/fonts'
 import { initialData } from '@/seed/seed'
 import React from 'react'
@@ -26,6 +28,10 @@ function ProductPage({ params: { slug } }: ProductPageProps) {
 
       <div className='col-span-1 md:col-span-2 '>
 
+        <ProductMobielSlideshow images={product.images} className='block md:hidden'/>
+
+         {/* Desktop  slideshow */}
+          <ProductSlideshow images={product.images} className='hidden md:block'/>
       </div>
 
       <div className='col-span-1 px-5 '>

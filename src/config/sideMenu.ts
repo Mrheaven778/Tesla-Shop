@@ -5,7 +5,7 @@ export const SideMenuItems = [{
 },{
     icono: 'IoTicketOutline',
     nombre: 'Ordenes',
-    dirrecion: '/order',
+    dirrecion: '/orders',
 },{
     icono: 'IoLogInOutline',
     nombre: 'Iniciar sesion',
